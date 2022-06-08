@@ -9,7 +9,6 @@ from datetime import timedelta
 from celery.utils.log import get_task_logger
 from celery import group
 
-
 broker = environ.get('MESSAGE_BROKER_URL', 'amqp://guest:guest@localhost:5672//')
 redis = environ.get('REDIS_URL', 'redis://localhost:6379/0')
 
